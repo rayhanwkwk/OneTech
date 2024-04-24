@@ -124,6 +124,11 @@ h6 {
   height: auto; 
 }
 
+#footer-logo {
+  width: 200px;
+  height: auto; 
+}
+
 
 #header .logo a {
   color: #fff;
@@ -422,7 +427,7 @@ h6 {
 }
 
 #hero h1 span {
-  color: #ffc451;
+  color: var(--red-color);
 }
 
 #hero h2 {
@@ -1002,7 +1007,7 @@ section {
 --------------------------------------------------------------*/
 .testimonials {
   padding: 80px 0;
-  background: rgb(255, 255, 255)255, 255, 255);
+  background: rgb(255, 255, 255);
   position: relative;
 }
 
@@ -1201,7 +1206,7 @@ section {
 .contact .info i {
   font-size: 20px;
   background: var(--red-color);
-  color: #151515;
+  color: var(--white-color);
   float: left;
   width: 44px;
   height: 44px;
@@ -1292,7 +1297,7 @@ section {
 
 .contact .php-email-form input:focus,
 .contact .php-email-form textarea:focus {
-  border-color: #ffc451;
+  border-color: var(--red-color);
 }
 
 .contact .php-email-form input {
@@ -1304,7 +1309,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #ffc451;
+  background: var(--red-color);
   border: 0;
   padding: 10px 24px;
   color: #151515;
@@ -1313,7 +1318,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #ffcd6b;
+  background: var(--red-color);
 }
 
 @keyframes animate-loading {
@@ -1407,7 +1412,7 @@ section {
 }
 
 #footer .footer-top .footer-info h3 span {
-  color: #ffc451;
+  color: var(--red-color);
 }
 
 #footer .footer-top .footer-info p {
@@ -1528,4 +1533,9 @@ section {
 .carousel-item img {
   max-height: 400px;
   object-fit: cover;
+}
+
+p {
+  text-align: justify;
+  margin-bottom: 15px;
 }
