@@ -1,20 +1,8 @@
-/**
-* Template Name: Gp
-* Template URL: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/
-* Updated: Mar 17 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
 :root{
   --red-color: #b40000;
   --brown-color: #967B5A;
   --white-color: #ffffff;
-  --body-font: 'Varela Round', sans-serif;
-  --heading-font: 'Dancing Script', cursive;
   --black-color: #121212;
   --padding:7% 5%;
   --line-height: 2;
@@ -26,12 +14,12 @@ body {
 }
 
 a {
-  color: #ffc451;
+  color: var(--red-color);
   text-decoration: none;
 }
 
 a:hover {
-  color: #ffd584;
+  color: var(--red-color);
   text-decoration: none;
 }
 
@@ -117,23 +105,13 @@ h6 {
     transform: rotate(360deg);
   }
 }
-
-/*--------------------------------------------------------------
-# Disable aos animation delay on mobile devices
---------------------------------------------------------------*/
-@media screen and (max-width: 768px) {
-  [data-aos-delay] {
-    transition-delay: 0 !important;
-  }
-}
-
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
 #header {
-  transition: all 0.5s;
+  transition: all 0.3s;
   z-index: 997;
-  padding: 15px 0;
+  padding: 15px;
 }
 
 #header.header-scrolled,
@@ -142,8 +120,8 @@ h6 {
 }
 
 #header-logo {
-  width: 120px; /* Atur lebar gambar sesuai kebutuhan */
-  height: auto; /* Biarkan tinggi gambar menyesuaikan proporsi lebar */
+  width: 120px;
+  height: auto; 
 }
 
 
@@ -464,7 +442,7 @@ h6 {
 #hero .icon-box i {
   font-size: 32px;
   line-height: 1;
-  color: #ffc451;
+  color: var(--red-color);
 }
 
 #hero .icon-box h3 {
@@ -482,11 +460,11 @@ h6 {
 }
 
 #hero .icon-box h3 a:hover {
-  color: #ffc451;
+  color: var(--red-color);
 }
 
 #hero .icon-box:hover {
-  border-color: #ffc451;
+  border-color: var(--red-color);
 }
 
 @media (min-width: 1024px) {
@@ -585,7 +563,8 @@ section {
 # Clients
 --------------------------------------------------------------*/
 .clients {
-  padding-top: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .clients .swiper-slide img {
@@ -613,7 +592,7 @@ section {
 }
 
 .clients .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #ffc451;
+  background-color: var(--red-color);
 }
 
 /*--------------------------------------------------------------
@@ -636,7 +615,7 @@ section {
 .features .icon-box i {
   font-size: 48px;
   float: left;
-  color: #ffc451;
+  color: var(--red-color);
 }
 
 .features .icon-box p {
@@ -667,7 +646,7 @@ section {
   margin: 0 auto;
   width: 64px;
   height: 64px;
-  background: #ffc451;
+  background: var(--red-color);
   border-radius: 4px;
   display: flex;
   align-items: center;
@@ -677,7 +656,7 @@ section {
 }
 
 .services .icon-box .icon i {
-  color: #151515;
+  color: var(--white-color);
   font-size: 28px;
   transition: ease-in-out 0.3s;
 }
@@ -694,7 +673,7 @@ section {
 }
 
 .services .icon-box h4 a:hover {
-  color: #ffc451;
+  color: var(--red-color);
 }
 
 .services .icon-box p {
@@ -779,7 +758,7 @@ section {
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
   color: #151515;
-  background: #ffc451;
+  background: var(--red-color);
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -1023,9 +1002,7 @@ section {
 --------------------------------------------------------------*/
 .testimonials {
   padding: 80px 0;
-  background: url("../img/testimonials-bg.jpg") no-repeat;
-  background-position: center center;
-  background-size: cover;
+  background: rgb(255, 255, 255)255, 255, 255);
   position: relative;
 }
 
@@ -1050,7 +1027,7 @@ section {
 
 .testimonials .testimonial-item {
   text-align: center;
-  color: #fff;
+  color: black;
 }
 
 .testimonials .testimonial-item .testimonial-img {
@@ -1223,7 +1200,7 @@ section {
 
 .contact .info i {
   font-size: 20px;
-  background: #ffc451;
+  background: var(--red-color);
   color: #151515;
   float: left;
   width: 44px;
@@ -1406,14 +1383,13 @@ section {
 --------------------------------------------------------------*/
 #footer {
   background: black;
-  padding: 0 0 30px 0;
+  padding: 0 0 10px 0;
   color: #fff;
   font-size: 14px;
 }
 
 #footer .footer-top {
   background: #151515;
-  border-bottom: 1px solid #222222;
   padding: 60px 0 30px 0;
 }
 
@@ -1457,11 +1433,6 @@ section {
   transition: 0.3s;
 }
 
-#footer .footer-top .social-links a:hover {
-  background: #ffc451;
-  color: #151515;
-  text-decoration: none;
-}
 
 #footer .footer-top h4 {
   font-size: 16px;
@@ -1506,7 +1477,7 @@ section {
 }
 
 #footer .footer-top .footer-links ul a:hover {
-  color: #ffc451;
+  color: var(--red-color);
 }
 
 #footer .footer-top .footer-newsletter form {
@@ -1532,14 +1503,14 @@ section {
   background: none;
   font-size: 16px;
   padding: 0 20px;
-  background: #ffc451;
+  background: var(--red-color);
   color: #151515;
   transition: 0.3s;
   border-radius: 0 4px 4px 0;
 }
 
 #footer .footer-top .footer-newsletter form input[type=submit]:hover {
-  background: #ffcd6b;
+  background: var(--red-color);
 }
 
 #footer .copyright {
